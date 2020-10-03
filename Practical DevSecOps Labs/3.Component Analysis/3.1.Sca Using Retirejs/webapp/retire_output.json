@@ -1,0 +1,1638 @@
+{
+    "version": "2.2.2",
+    "start": "2020-09-07T14:36:43.621Z",
+    "data": [
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/taskManager/static/taskManager/js/jquery-1.8.3.min.js",
+            "results": [
+                {
+                    "version": "1.8.3",
+                    "component": "jquery",
+                    "detection": "filename",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "http://bugs.jquery.com/ticket/11290",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2012-6708",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.9.0b1",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2012-6708"
+                                ],
+                                "bug": "11290",
+                                "summary": "Selector interpreted as HTML"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/jquery/jquery/issues/2432",
+                                "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.12.0",
+                            "atOrAbove": "1.4.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "issue": "2432",
+                                "summary": "3rd party CORS request may execute",
+                                "CVE": [
+                                    "CVE-2015-9251"
+                                ]
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://bugs.jquery.com/ticket/11974",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.12.0",
+                            "atOrAbove": "1.8.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2015-9251"
+                                ],
+                                "issue": "11974",
+                                "summary": "parseHTML() executes scripts in event handlers"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+                                "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+                            ],
+                            "below": "3.4.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2019-11358"
+                                ],
+                                "summary": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11022"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11023"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/taskManager/static/taskManager/js/jquery-migrate-1.2.1.min.js",
+            "results": [
+                {
+                    "version": "1.2.1",
+                    "component": "jquery-migrate",
+                    "detection": "filename",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "http://bugs.jquery.com/ticket/11290",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.2.2",
+                            "severity": "medium",
+                            "identifiers": {
+                                "bug": "11290",
+                                "summary": "Selector interpreted as HTML"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/taskManager/static/taskManager/js/jquery-ui-1.9.2.custom.min.js",
+            "results": [
+                {
+                    "version": "1.9.2",
+                    "component": "jquery-ui-dialog",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "http://bugs.jqueryui.com/ticket/6016",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2010-5312"
+                            ],
+                            "below": "1.10.0",
+                            "atOrAbove": "1.8.9",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2010-5312"
+                                ],
+                                "bug": "6016",
+                                "summary": "Title cross-site scripting vulnerability"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/jquery/api.jqueryui.com/issues/281",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2016-7103",
+                                "https://snyk.io/vuln/npm:jquery-ui:20160721"
+                            ],
+                            "below": "1.12.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2016-7103"
+                                ],
+                                "bug": "281",
+                                "summary": "XSS Vulnerability on closeText option"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "version": "1.9.2",
+                    "component": "jquery-ui-tooltip",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "http://bugs.jqueryui.com/ticket/8859",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2012-6662"
+                            ],
+                            "below": "1.10.0",
+                            "atOrAbove": "1.9.2",
+                            "severity": "high",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2012-6662"
+                                ],
+                                "bug": "8859",
+                                "summary": "Cross-site scripting (XSS) vulnerability in the default content option in jquery.ui.tooltip"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/taskManager/static/taskManager/js/bootstrap.js",
+            "results": [
+                {
+                    "version": "3.2.0",
+                    "component": "bootstrap",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://github.com/twbs/bootstrap/issues/28236"
+                            ],
+                            "below": "3.4.1",
+                            "severity": "high",
+                            "identifiers": {
+                                "issue": "28236",
+                                "summary": "XSS in data-template, data-content and data-title properties of tooltip/popover",
+                                "CVE": [
+                                    "CVE-2019-8331"
+                                ]
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/twbs/bootstrap/issues/20184"
+                            ],
+                            "below": "3.4.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "issue": "20184",
+                                "summary": "XSS in data-target property of scrollspy",
+                                "CVE": [
+                                    "CVE-2018-14041"
+                                ]
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/twbs/bootstrap/issues/20184"
+                            ],
+                            "below": "3.4.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "issue": "20184",
+                                "summary": "XSS in collapse data-parent attribute",
+                                "CVE": [
+                                    "CVE-2018-14040"
+                                ]
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/twbs/bootstrap/issues/20184"
+                            ],
+                            "below": "3.4.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "issue": "20184",
+                                "summary": "XSS in data-container property of tooltip",
+                                "CVE": [
+                                    "CVE-2018-14042"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/taskManager/static/taskManager/js/jquery.js",
+            "results": [
+                {
+                    "version": "1.10.2",
+                    "component": "jquery",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://github.com/jquery/jquery/issues/2432",
+                                "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.12.0",
+                            "atOrAbove": "1.4.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "issue": "2432",
+                                "summary": "3rd party CORS request may execute",
+                                "CVE": [
+                                    "CVE-2015-9251"
+                                ]
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://bugs.jquery.com/ticket/11974",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.12.0",
+                            "atOrAbove": "1.8.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2015-9251"
+                                ],
+                                "issue": "11974",
+                                "summary": "parseHTML() executes scripts in event handlers"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+                                "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+                            ],
+                            "below": "3.4.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2019-11358"
+                                ],
+                                "summary": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11022"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11023"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/grunt-retire/test-files/dojo.js",
+            "results": [
+                {
+                    "version": "1.4.2",
+                    "component": "dojo",
+                    "detection": "filecontentreplace",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://github.com/dojo/dojo/pull/307",
+                                "https://dojotoolkit.org/blog/dojo-1-14-released"
+                            ],
+                            "below": "1.10.10",
+                            "severity": "medium",
+                            "identifiers": {
+                                "PR": "307"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://dojotoolkit.org/blog/dojo-1-14-released"
+                            ],
+                            "below": "1.14",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2018-15494"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/grunt-retire/test-files/jquery-1.6.js",
+            "results": [
+                {
+                    "version": "1.6",
+                    "component": "jquery",
+                    "detection": "filename",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nvd.nist.gov/vuln/detail/CVE-2011-4969",
+                                "http://research.insecurelabs.org/jquery/test/",
+                                "https://bugs.jquery.com/ticket/9521"
+                            ],
+                            "below": "1.6.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2011-4969"
+                                ],
+                                "summary": "XSS with location.hash"
+                            }
+                        },
+                        {
+                            "info": [
+                                "http://bugs.jquery.com/ticket/11290",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2012-6708",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.9.0b1",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2012-6708"
+                                ],
+                                "bug": "11290",
+                                "summary": "Selector interpreted as HTML"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/jquery/jquery/issues/2432",
+                                "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.12.0",
+                            "atOrAbove": "1.4.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "issue": "2432",
+                                "summary": "3rd party CORS request may execute",
+                                "CVE": [
+                                    "CVE-2015-9251"
+                                ]
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+                                "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+                            ],
+                            "below": "3.4.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2019-11358"
+                                ],
+                                "summary": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11022"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11023"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/nyc/node_modules/handlebars/dist/handlebars.amd.js",
+            "results": [
+                {
+                    "version": "4.0.5",
+                    "component": "handlebars",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v430---september-24th-2019"
+                            ],
+                            "below": "4.3.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Disallow calling helperMissing and blockHelperMissing directly"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v453---november-18th-2019"
+                            ],
+                            "below": "4.5.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Prototype pollution"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/nyc/node_modules/handlebars/dist/handlebars.amd.min.js",
+            "results": [
+                {
+                    "version": "4.0.5",
+                    "component": "handlebars",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v430---september-24th-2019"
+                            ],
+                            "below": "4.3.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Disallow calling helperMissing and blockHelperMissing directly"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v453---november-18th-2019"
+                            ],
+                            "below": "4.5.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Prototype pollution"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/nyc/node_modules/handlebars/dist/handlebars.min.js",
+            "results": [
+                {
+                    "version": "4.0.5",
+                    "component": "handlebars",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v430---september-24th-2019"
+                            ],
+                            "below": "4.3.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Disallow calling helperMissing and blockHelperMissing directly"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v453---november-18th-2019"
+                            ],
+                            "below": "4.5.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Prototype pollution"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/nyc/node_modules/handlebars/dist/handlebars.runtime.amd.js",
+            "results": [
+                {
+                    "version": "4.0.5",
+                    "component": "handlebars",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v430---september-24th-2019"
+                            ],
+                            "below": "4.3.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Disallow calling helperMissing and blockHelperMissing directly"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v453---november-18th-2019"
+                            ],
+                            "below": "4.5.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Prototype pollution"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/nyc/node_modules/handlebars/dist/handlebars.runtime.amd.min.js",
+            "results": [
+                {
+                    "version": "4.0.5",
+                    "component": "handlebars",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v430---september-24th-2019"
+                            ],
+                            "below": "4.3.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Disallow calling helperMissing and blockHelperMissing directly"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v453---november-18th-2019"
+                            ],
+                            "below": "4.5.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Prototype pollution"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/nyc/node_modules/handlebars/dist/handlebars.js",
+            "results": [
+                {
+                    "version": "4.0.5",
+                    "component": "handlebars",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v430---september-24th-2019"
+                            ],
+                            "below": "4.3.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Disallow calling helperMissing and blockHelperMissing directly"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v453---november-18th-2019"
+                            ],
+                            "below": "4.5.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Prototype pollution"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/nyc/node_modules/handlebars/dist/handlebars.runtime.min.js",
+            "results": [
+                {
+                    "version": "4.0.5",
+                    "component": "handlebars",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v430---september-24th-2019"
+                            ],
+                            "below": "4.3.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Disallow calling helperMissing and blockHelperMissing directly"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v453---november-18th-2019"
+                            ],
+                            "below": "4.5.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Prototype pollution"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/nyc/node_modules/handlebars/dist/handlebars.runtime.js",
+            "results": [
+                {
+                    "version": "4.0.5",
+                    "component": "handlebars",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v430---september-24th-2019"
+                            ],
+                            "below": "4.3.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Disallow calling helperMissing and blockHelperMissing directly"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/wycats/handlebars.js/blob/master/release-notes.md#v453---november-18th-2019"
+                            ],
+                            "below": "4.5.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Prototype pollution"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/selenium-webdriver/lib/test/data/jquery-1.3.2.js",
+            "results": [
+                {
+                    "version": "1.3.2",
+                    "component": "jquery",
+                    "detection": "filename",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nvd.nist.gov/vuln/detail/CVE-2011-4969",
+                                "http://research.insecurelabs.org/jquery/test/",
+                                "https://bugs.jquery.com/ticket/9521"
+                            ],
+                            "below": "1.6.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2011-4969"
+                                ],
+                                "summary": "XSS with location.hash"
+                            }
+                        },
+                        {
+                            "info": [
+                                "http://bugs.jquery.com/ticket/11290",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2012-6708",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.9.0b1",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2012-6708"
+                                ],
+                                "bug": "11290",
+                                "summary": "Selector interpreted as HTML"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+                                "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+                            ],
+                            "below": "3.4.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2019-11358"
+                                ],
+                                "summary": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11022"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11023"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/selenium-webdriver/lib/test/data/js/jquery-ui-1.8.10.custom.min.js",
+            "results": [
+                {
+                    "version": "1.8.10",
+                    "component": "jquery-ui-dialog",
+                    "detection": "filecontent",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "http://bugs.jqueryui.com/ticket/6016",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2010-5312"
+                            ],
+                            "below": "1.10.0",
+                            "atOrAbove": "1.8.9",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2010-5312"
+                                ],
+                                "bug": "6016",
+                                "summary": "Title cross-site scripting vulnerability"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/jquery/api.jqueryui.com/issues/281",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2016-7103",
+                                "https://snyk.io/vuln/npm:jquery-ui:20160721"
+                            ],
+                            "below": "1.12.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2016-7103"
+                                ],
+                                "bug": "281",
+                                "summary": "XSS Vulnerability on closeText option"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/selenium-webdriver/lib/test/data/js/jquery-1.4.4.min.js",
+            "results": [
+                {
+                    "version": "1.4.4",
+                    "component": "jquery",
+                    "detection": "filename",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nvd.nist.gov/vuln/detail/CVE-2011-4969",
+                                "http://research.insecurelabs.org/jquery/test/",
+                                "https://bugs.jquery.com/ticket/9521"
+                            ],
+                            "below": "1.6.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2011-4969"
+                                ],
+                                "summary": "XSS with location.hash"
+                            }
+                        },
+                        {
+                            "info": [
+                                "http://bugs.jquery.com/ticket/11290",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2012-6708",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.9.0b1",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2012-6708"
+                                ],
+                                "bug": "11290",
+                                "summary": "Selector interpreted as HTML"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://github.com/jquery/jquery/issues/2432",
+                                "http://blog.jquery.com/2016/01/08/jquery-2-2-and-1-12-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2015-9251",
+                                "http://research.insecurelabs.org/jquery/test/"
+                            ],
+                            "below": "1.12.0",
+                            "atOrAbove": "1.4.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "issue": "2432",
+                                "summary": "3rd party CORS request may execute",
+                                "CVE": [
+                                    "CVE-2015-9251"
+                                ]
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/",
+                                "https://nvd.nist.gov/vuln/detail/CVE-2019-11358",
+                                "https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b"
+                            ],
+                            "below": "3.4.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2019-11358"
+                                ],
+                                "summary": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollution"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11022"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/"
+                            ],
+                            "below": "3.5.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "CVE": [
+                                    "CVE-2020-11023"
+                                ],
+                                "summary": "Regex in its jQuery.htmlPrefilter sometimes may introduce XSS"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "/Users/boriphuth/DevSecOps/DevSecOps-Studio/Practical DevSecOps Labs/3.Component Analysis/3.1.Sca Using Retirejs/webapp/node_modules/selenium-webdriver/lib/test/data/js/tinymce.min.js",
+            "results": [
+                {
+                    "version": "4.0.26",
+                    "component": "tinyMCE",
+                    "detection": "filecontentreplace",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://www.tinymce.com/docs/changelog/"
+                            ],
+                            "below": "4.2.4",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "xss issues with media plugin not properly filtering out some script attributes."
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://www.tinymce.com/docs/changelog/"
+                            ],
+                            "below": "4.2.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "FIXED so script elements gets removed by default to prevent possible XSS issues in default config implementations"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://www.tinymce.com/docs/changelog/"
+                            ],
+                            "below": "4.7.12",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "FIXED so links with xlink:href attributes are filtered correctly to prevent XSS."
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/adm-zip/package.json",
+            "results": [
+                {
+                    "component": "adm-zip",
+                    "version": "0.4.4",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/362118"
+                            ],
+                            "below": "0.4.9",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "Path Traversal"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/growl/package.json",
+            "results": [
+                {
+                    "component": "growl",
+                    "version": "1.9.2",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/146"
+                            ],
+                            "below": "1.9.3",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "growl_command-injection"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/hoek/package.json",
+            "results": [
+                {
+                    "component": "hoek",
+                    "version": "2.16.3",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/310439"
+                            ],
+                            "below": "4.2.1",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Prototype pollution attack"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/uglify-js/package.json",
+            "results": [
+                {
+                    "component": "uglify-js",
+                    "version": "2.4.24",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/48"
+                            ],
+                            "below": "2.6.0",
+                            "severity": "medium"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/utile/package.json",
+            "results": [
+                {
+                    "component": "utile",
+                    "version": "0.2.1",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/321701"
+                            ],
+                            "below": "99.999.9999",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Out-of-bounds Read"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/npm/node_modules/request/node_modules/extend/package.json",
+            "results": [
+                {
+                    "component": "extend",
+                    "version": "3.0.0",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/381185"
+                            ],
+                            "below": "3.0.2",
+                            "severity": "critical",
+                            "identifiers": {
+                                "summary": "Prototype pollution attack"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/npm/node_modules/request/node_modules/stringstream/package.json",
+            "results": [
+                {
+                    "component": "stringstream",
+                    "version": "0.0.5",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/321670"
+                            ],
+                            "below": "0.0.6",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Out-of-bounds Read"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/npm/node_modules/read-package-json/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/package.json",
+            "results": [
+                {
+                    "component": "brace-expansion",
+                    "version": "1.1.6",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/338"
+                            ],
+                            "below": "1.1.7",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "brace-expansion_redos"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/nyc/node_modules/lodash/package.json",
+            "results": [
+                {
+                    "component": "lodash",
+                    "version": "4.13.1",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/380873"
+                            ],
+                            "below": "4.17.11",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Prototype pollution attack"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/nyc/node_modules/handlebars/package.json",
+            "results": [
+                {
+                    "component": "handlebars",
+                    "version": "4.0.5",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-173692",
+                                "https://github.com/wycats/handlebars.js/commit/7372d4e9dffc9d70c09671aa28b9392a1577fd86"
+                            ],
+                            "below": "4.0.13",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars may lead to remote code execution if an attacker can control the template"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://snyk.io/vuln/SNYK-JS-HANDLEBARS-174183",
+                                "https://github.com/wycats/handlebars.js/issues/1495",
+                                "https://github.com/wycats/handlebars.js/commit/cd38583216dce3252831916323202749431c773e"
+                            ],
+                            "below": "4.0.14",
+                            "atOrAbove": "4.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "A prototype pollution vulnerability in handlebars may lead to remote code execution if an attacker can control the template"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/grunt-retire/node_modules/request/package.json",
+            "results": [
+                {
+                    "component": "request",
+                    "version": "2.67.0",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/309"
+                            ],
+                            "below": "2.68.0",
+                            "atOrAbove": "2.52.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "request_remote-memory-exposure"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/grunt-retire/node_modules/tough-cookie/package.json",
+            "results": [
+                {
+                    "component": "tough-cookie",
+                    "version": "2.2.2",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/130"
+                            ],
+                            "below": "2.3.0",
+                            "atOrAbove": "0.9.7",
+                            "severity": "high",
+                            "identifiers": {
+                                "advisory": "ReDoS via long string of semicolons"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/zaproxy/node_modules/lodash/package.json",
+            "results": [
+                {
+                    "component": "lodash",
+                    "version": "2.4.2",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/310443"
+                            ],
+                            "below": "4.0.0",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Prototype pollution attack"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/380873"
+                            ],
+                            "below": "4.17.11",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Prototype pollution attack"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/zaproxy/node_modules/request/package.json",
+            "results": [
+                {
+                    "component": "request",
+                    "version": "2.36.0",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/309"
+                            ],
+                            "below": "2.47.0",
+                            "atOrAbove": "2.2.6",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "request_remote-memory-exposure"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/zaproxy/node_modules/hawk/package.json",
+            "results": [
+                {
+                    "component": "hawk",
+                    "version": "1.0.0",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/77"
+                            ],
+                            "below": "3.1.3",
+                            "severity": "medium",
+                            "identifiers": {
+                                "summary": "Regex denial of service"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/zaproxy/node_modules/hoek/package.json",
+            "results": [
+                {
+                    "component": "hoek",
+                    "version": "0.9.1",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/310439"
+                            ],
+                            "below": "4.2.1",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Prototype pollution attack"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/zaproxy/node_modules/qs/package.json",
+            "results": [
+                {
+                    "component": "qs",
+                    "version": "0.6.6",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/28"
+                            ],
+                            "below": "1.0.0",
+                            "severity": "medium",
+                            "identifiers": {
+                                "advisory": "qs_dos_extended_event_loop_blocking"
+                            }
+                        },
+                        {
+                            "info": [
+                                "https://nodesecurity.io/advisories/29"
+                            ],
+                            "below": "1.0.0",
+                            "severity": "high",
+                            "identifiers": {
+                                "summary": "qs_denial-of-service-memory-exhaustion"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "node_modules/forever-monitor/node_modules/utile/package.json",
+            "results": [
+                {
+                    "component": "utile",
+                    "version": "0.3.0",
+                    "vulnerabilities": [
+                        {
+                            "info": [
+                                "https://hackerone.com/reports/321701"
+                            ],
+                            "below": "99.999.9999",
+                            "severity": "low",
+                            "identifiers": {
+                                "summary": "Out-of-bounds Read"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "messages": [],
+    "errors": [],
+    "time": 48.022
+}

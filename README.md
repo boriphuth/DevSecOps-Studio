@@ -250,3 +250,73 @@ DevSecOps Studio uses some of the ansible roles from [Jeff](https://github.com/g
 ## Who do I talk to?
 
 * If you have any questions regarding this repo, please contact Mohammed A. Imran @secfigo and Raghunath G @raghunath24
+
+pip install --quiet njsscan
+
+pip3 install --quiet sslyze
+
+
+https://software.opensuse.org/download.html?project=home%3Acabelo&package=owasp-zap#manualUbuntu
+
+sudo apt update
+sudo apt install snapd
+sudo snap install zaproxy --classic
+
+https://www.zaproxy.org/docs/docker/baseline-scan/
+/# which zap-baseline.py
+/zap//zap-baseline.py
+
+curl -LO https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2.9.0_Linux.tar.gz
+
+zap-baseline.py -t https://prod-dcomuldh.lab.practical-devsecops.training
+
+mkdir /zap/wrk
+zap-baseline.py -t https://prod-mgsmzbyr.lab.practical-devsecops.training -J report.json
+
+echo 'deb http://download.opensuse.org/repositories/home:/cabelo/xUbuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/home:cabelo.list
+curl -fsSL https://download.opensuse.org/repositories/home:cabelo/xUbuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home:cabelo.gpg > /dev/null
+sudo apt update
+sudo apt install owasp-zap
+
+---
+- name: DevSecOps-Box
+  ip: 172.18.0.5
+
+# - name: jenkins
+#   ip: 10.0.1.11
+
+
+- name: gitlab
+  box: ubuntu/bionic64 
+  box_version: 20200407.0.0 
+  ram: 2048
+  ip: 10.0.1.15
+  ansible: "provisioning/gitlab.yml"
+
+- name: gitlab-runner
+  box: ubuntu/bionic64 
+  box_version: 20200407.0.0 
+  ram: 512
+  ip: 10.0.1.16
+  ansible: "provisioning/gitlab-runner.yml"
+
+# - name: elk
+#   box: ubuntu/bionic64 
+#   box_version: 20200407.0.0 
+#   ram: 1024
+#   ip: 10.0.1.18
+#   ansible: "provisioning/elk.yml"
+
+  #- name: vuln-management
+  #  box: ubuntu/bionic64 
+  #  ram: 512
+  #  ip: 10.0.1.20
+  #  ansible: "dojo.yml"
+  
+  # Includes registry docker, docker and docker compose installed. 
+- name: prod
+  ip: 10.0.1.22
+
+pip3 install --quiet dataclasses
+
+bandit -r . -f json | tee bandit-output.json

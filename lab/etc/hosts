@@ -1,0 +1,21 @@
+# BEGIN ANSIBLE MANAGED BLOCK DevSecOps-Box.local
+10.0.1.10 DevSecOps-Box.local
+# END ANSIBLE MANAGED BLOCK DevSecOps-Box.local
+# BEGIN ANSIBLE MANAGED BLOCK jenkins.local
+10.0.1.11 jenkins.local
+# END ANSIBLE MANAGED BLOCK jenkins.local
+# BEGIN ANSIBLE MANAGED BLOCK gitlab.local
+10.0.1.15 gitlab.local
+# END ANSIBLE MANAGED BLOCK gitlab.local
+# BEGIN ANSIBLE MANAGED BLOCK gitlab-runner.local
+10.0.1.16 gitlab-runner.local
+# END ANSIBLE MANAGED BLOCK gitlab-runner.local
+# BEGIN ANSIBLE MANAGED BLOCK elk.local
+10.0.1.18 elk.local
+# END ANSIBLE MANAGED BLOCK elk.local
+# BEGIN ANSIBLE MANAGED BLOCK vuln-management.local
+10.0.1.20 vuln-management.local
+# END ANSIBLE MANAGED BLOCK vuln-management.local
+# BEGIN ANSIBLE MANAGED BLOCK prod.local
+10.0.1.22 prod.local
+# END ANSIBLE MANAGED BLOCK prod.local

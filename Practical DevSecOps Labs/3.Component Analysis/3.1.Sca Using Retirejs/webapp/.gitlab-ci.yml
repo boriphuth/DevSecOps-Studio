@@ -1,0 +1,49 @@
+stages:
+ - build
+ - test
+ - release
+ - artefact_scanning 
+ - preprod
+ - integration
+ - prod
+
+lint:
+  stage: build
+  script:
+   - docker pull hadolint/hadolint
+   - docker run --rm -i hadolint/hadolint < Dockerfile
+   # - docker run --rm -i -v $(pwd):/opt hadolint/hadolint /bin/hadolint
+  allow_failure: true
+  
+sast:
+  stage: build
+  script:
+   - id -u
+   - id -g
+   - docker pull secfigo/bandit
+   - docker run --user $(id -u):$(id -g) -v $(pwd):/src --rm secfigo/bandit bandit -r /src
+  allow_failure: true
+
+test:
+  stage: test
+  script:
+   - virtualenv env
+   - source env/bin/activate
+   - pip install -r requirements.txt
+   - python manage.py test taskManager
+
+oast:
+  stage: test
+  script:
+   - pip install safety
+   - safety check -r requirements.txt
+  allow_failure: true
+
+# you need to setup a server at port 10.0.1.22:8000 for this to work, a simple web server can be run using python -m SimpleHTTPServer
+zap-baseline:
+  stage: integration
+  script:
+    - echo true
+   # - docker run -t owasp/zap2docker-stable zap-baseline.py -t http://10.0.1.22:8000/
+   # - docker run -t owasp/zap2docker-stable zap-baseline.py -j -t https://10.0.1.22:8000/ # with ajax scanning
+  allow_failure: true

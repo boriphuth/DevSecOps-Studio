@@ -1,0 +1,74 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=US, ST=CA, L=SanFrancisco, O=Fort-Funston, OU=MyOrganizationalUnit, CN=Fort-Funston CA/name=EasyRSA/emailAddress=me@myhost.mydomain
+        Validity
+            Not Before: Sep  5 01:56:28 2020 GMT
+            Not After : Sep  3 01:56:28 2030 GMT
+        Subject: C=US, ST=CA, L=SanFrancisco, O=Fort-Funston, OU=MyOrganizationalUnit, CN=lab/name=EasyRSA/emailAddress=me@myhost.mydomain
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:cb:03:39:df:6d:4a:ec:2d:37:86:59:48:59:8d:
+                    3b:3d:08:44:ba:22:9d:2f:4e:b6:6f:7d:57:4b:c0:
+                    66:4f:c9:ae:ef:a8:9b:64:cc:24:cb:b0:8e:42:90:
+                    74:e9:17:05:6c:3b:60:32:3c:3e:38:34:18:d8:9a:
+                    63:2d:89:95:19:6c:7f:fa:32:56:18:fc:70:97:c3:
+                    48:a8:e4:ad:f3:fb:1a:f5:47:92:5c:7c:ec:6f:c5:
+                    b6:4e:cd:54:24:36:47:ed:b0:30:ef:4b:9d:38:84:
+                    76:13:05:8d:5c:7a:b9:93:db:94:c2:28:6e:a4:58:
+                    c3:08:96:e1:53:86:a4:35:3d
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                CB:72:87:C6:3A:CF:15:FB:C1:79:26:D0:9B:B6:C4:3B:77:FE:0C:D8
+            X509v3 Authority Key Identifier: 
+                keyid:55:0D:C0:D7:46:91:9F:30:3A:0C:A2:8E:29:67:FE:89:CB:CE:A2:4B
+                DirName:/C=US/ST=CA/L=SanFrancisco/O=Fort-Funston/OU=MyOrganizationalUnit/CN=Fort-Funston CA/name=EasyRSA/emailAddress=me@myhost.mydomain
+                serial:E0:6D:3C:FF:0D:D6:3E:EF
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+         46:da:4f:54:49:75:91:02:26:ec:1d:5e:19:97:fc:aa:c5:04:
+         5b:e0:f2:ab:ac:f6:35:88:07:53:d0:ca:63:59:48:77:9d:41:
+         3b:01:03:92:9c:0e:e4:3c:f7:fb:7e:eb:6c:78:fc:f0:e8:7b:
+         b5:14:4c:21:b7:f1:a6:af:8a:02:5e:01:12:89:a9:d4:db:ea:
+         5f:a7:0d:7b:85:d8:6b:9c:66:64:c7:ab:b2:00:c6:17:70:ee:
+         5e:e8:b4:44:f0:22:0c:c7:57:48:3d:9d:b7:ab:fc:69:b9:96:
+         3c:46:c5:3d:ff:c4:2f:76:26:70:46:f3:74:6a:4d:41:6a:05:
+         27:a0
+-----BEGIN CERTIFICATE-----
+MIIERzCCA7CgAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBtjELMAkGA1UEBhMCVVMx
+CzAJBgNVBAgTAkNBMRUwEwYDVQQHEwxTYW5GcmFuY2lzY28xFTATBgNVBAoTDEZv
+cnQtRnVuc3RvbjEdMBsGA1UECxMUTXlPcmdhbml6YXRpb25hbFVuaXQxGDAWBgNV
+BAMTD0ZvcnQtRnVuc3RvbiBDQTEQMA4GA1UEKRMHRWFzeVJTQTEhMB8GCSqGSIb3
+DQEJARYSbWVAbXlob3N0Lm15ZG9tYWluMB4XDTIwMDkwNTAxNTYyOFoXDTMwMDkw
+MzAxNTYyOFowgaoxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEVMBMGA1UEBxMM
+U2FuRnJhbmNpc2NvMRUwEwYDVQQKEwxGb3J0LUZ1bnN0b24xHTAbBgNVBAsTFE15
+T3JnYW5pemF0aW9uYWxVbml0MQwwCgYDVQQDEwNsYWIxEDAOBgNVBCkTB0Vhc3lS
+U0ExITAfBgkqhkiG9w0BCQEWEm1lQG15aG9zdC5teWRvbWFpbjCBnzANBgkqhkiG
+9w0BAQEFAAOBjQAwgYkCgYEAywM5321K7C03hllIWY07PQhEuiKdL062b31XS8Bm
+T8mu76ibZMwky7COQpB06RcFbDtgMjw+ODQY2JpjLYmVGWx/+jJWGPxwl8NIqOSt
+8/sa9UeSXHzsb8W2Ts1UJDZH7bAw70udOIR2EwWNXHq5k9uUwihupFjDCJbhU4ak
+NT0CAwEAAaOCAW0wggFpMAkGA1UdEwQCMAAwLQYJYIZIAYb4QgENBCAWHkVhc3kt
+UlNBIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUy3KHxjrPFfvBeSbQ
+m7bEO3f+DNgwgesGA1UdIwSB4zCB4IAUVQ3A10aRnzA6DKKOKWf+icvOokuhgbyk
+gbkwgbYxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEVMBMGA1UEBxMMU2FuRnJh
+bmNpc2NvMRUwEwYDVQQKEwxGb3J0LUZ1bnN0b24xHTAbBgNVBAsTFE15T3JnYW5p
+emF0aW9uYWxVbml0MRgwFgYDVQQDEw9Gb3J0LUZ1bnN0b24gQ0ExEDAOBgNVBCkT
+B0Vhc3lSU0ExITAfBgkqhkiG9w0BCQEWEm1lQG15aG9zdC5teWRvbWFpboIJAOBt
+PP8N1j7vMBMGA1UdJQQMMAoGCCsGAQUFBwMCMAsGA1UdDwQEAwIHgDANBgkqhkiG
+9w0BAQsFAAOBgQBG2k9USXWRAibsHV4Zl/yqxQRb4PKrrPY1iAdT0MpjWUh3nUE7
+AQOSnA7kPPf7futsePzw6Hu1FEwht/Gmr4oCXgESianU2+pfpw17hdhrnGZkx6uy
+AMYXcO5e6LRE8CIMx1dIPZ23q/xpuZY8RsU9/8QvdiZwRvN0ak1BagUnoA==
+-----END CERTIFICATE-----

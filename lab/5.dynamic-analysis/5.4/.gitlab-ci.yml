@@ -1,0 +1,55 @@
+stages:
+  - build
+  - test
+  - release
+  - preprod
+  - integration
+  - prod
+
+build:
+  stage: build
+  script:
+   - virtualenv env
+   - source env/bin/activate
+   - pip install -r requirements.txt
+   - python manage.py check
+
+test:
+  stage: test
+  script:
+   - virtualenv env
+   - source env/bin/activate
+   - pip install -r requirements.txt
+   - python manage.py test taskManager
+
+nikto:
+  stage: integration
+  script:
+    - nikto -output nikto_output.xml -h http://demo.testfire.net/
+  artifacts:
+    paths: [nikto-output.xml]
+    when: always
+
+sslscan:
+  stage: integration
+  script:
+    - sslyze --regular demo.testfire.net:443 --json_out sslyze-output.json
+  artifacts:
+    paths: [sslyze-output.json]
+    when: always
+  allow_failure: true
+
+nmap:
+  stage: integration
+  script:
+    - nmap demo.testfire.net -oX nmap.xml
+  artifacts:
+    paths: [nmap.xml]
+    when: always
+  allow_failure: true
+
+prod:
+  stage: prod
+  script:
+    - echo "This is a deploy step"
+  when: manual # Continuous Delivery

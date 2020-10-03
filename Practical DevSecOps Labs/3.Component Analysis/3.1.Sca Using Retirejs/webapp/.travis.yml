@@ -1,0 +1,65 @@
+sudo: required
+
+language: python
+python:
+  - "2.7"
+
+services:
+  - docker
+
+stages:
+ - build
+ - test
+ - release
+ - staging
+ - integration
+ - deploy
+
+jobs:
+  include:
+    - stage: build
+      env: test=docker-lint
+      script:
+        - docker pull hadolint/hadolint
+        - docker run --rm -i -v $(pwd):/opt hadolint/hadolint /bin/hadolint -f json /opt/Dockerfile  > hadolint-results.json || echo true
+    - stage: build
+      env: test=git-secrets
+      script:
+        - docker pull secfigo/trufflehog
+        # - docker run --user $(id -u):$(id -g) -v $(pwd):/src --rm secfigo/trufflehog trufflehog --fail_code yes file:///src
+        - docker run --user $(id -u):$(id -g) -v $(pwd):/src --rm secfigo/trufflehog trufflehog file:///src
+    - stage: build
+      env: test=sast
+      script:
+        - docker pull secfigo/bandit
+        - docker run --user $(id -u):$(id -g) -v $(pwd):/src --rm secfigo/bandit bandit -r /src -f json -o /src/bandit-output.json
+    - stage: build
+      env: test=oast
+      script:
+        - pip install safety
+        - echo 0
+        - safety check -r requirements.txt --json > oast-results.json || echo true
+    - stage: integration
+      env: test=nmap
+      before_script:
+        - sudo apt-get install -y nmap
+      script:
+        - nmap teachera.io -oX nmap.xml
+    - stage: integration
+      env: test=sslscan
+      script:
+        - pip install sslyze==1.4.2
+        - sslyze --regular teachera.io:443 --json_out sslyze-output.json
+    - stage: integration
+      env: test=nikto
+      script:
+        - docker pull secfigo/nikto:latest
+        - docker run --rm -v $(pwd):/report -i secfigo/nikto:latest -h demo.testfire.net
+        # - docker run --rm -v $(pwd):/report -i secfigo/nikto:latest -h 10.0.1.22
+
+matrix:
+    allow_failures:
+    - python: "2.7"
+      env: test=sast
+    - python: "2.7"
+      env: test=oast
