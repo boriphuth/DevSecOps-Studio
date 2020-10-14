@@ -250,3 +250,56 @@ DevSecOps Studio uses some of the ansible roles from [Jeff](https://github.com/g
 ## Who do I talk to?
 
 * If you have any questions regarding this repo, please contact Mohammed A. Imran @secfigo and Raghunath G @raghunath24
+
+https://kiazhi.github.io/blog/The-easy-way-to-get-Ubuntu-18.04-distro-environment-on-Windows/
+
+## Ensuring Windows Subsystem for Linux feature is enabled
+```bash
+# Check if Microsoft-Windows-Subsystem-Linux feature is enabled 
+if((Get-WindowsOptionalFeature `
+    -FeatureName "Microsoft-Windows-Subsystem-Linux" `
+    -Online).State -ne "Enabled")
+{
+    # Enable Microsoft-Windows-Subsystem-Linux feature if
+    #  the feature is not enabled
+    Enable-WindowsOptionalFeature `
+        -FeatureName "Microsoft-Windows-Subsystem-Linux" `
+        -Online `
+        -NoRestart:$False ;
+}
+```
+## Downloading Ubuntu 18.04 distro instance
+```bash
+# Download Ubuntu application for WSL
+Invoke-WebRequest `
+    -Uri "https://aka.ms/wsl-ubuntu-1804" `
+    -OutFile "~\CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2018.817.0_x64__79rhkp1fndgsc.appx" `
+    -UseBasicParsing ;
+```
+## Installation for Windows Server
+```bash
+# Rename the file extension to compressed file extension
+Rename-Item `
+    -Path "~\CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2018.817.0_x64__79rhkp1fndgsc.appx" `
+    -NewName "Ubuntu1804.zip" ;
+
+# Expand the compressed file to destination
+Expand-Archive `
+    -Path "~\Ubuntu1804.zip" `
+    -DestinationPath "~\.wsl\distro\Ubuntu" ;
+
+# Launch the distro setup
+Start-Process `
+    -FilePath "~\.wsl\distro\Ubuntu\Ubuntu1804.exe" ;
+```
+## Updating the Ubuntu 18.04 distro instance
+```bash
+# Update and upgrade Ubuntu
+sudo apt update && sudo apt upgrade
+```
+## Install Ansibl
+```bash
+ sudo apt-add-repository ppa:ansible/ansible
+ sudo apt-get install ansible
+ ansible --version
+```
