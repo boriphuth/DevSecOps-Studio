@@ -297,7 +297,7 @@ Start-Process `
 # Update and upgrade Ubuntu
 sudo apt update && sudo apt upgrade
 ```
-## Install Ansibl
+## Install Ansible
 ```bash
  sudo apt-add-repository ppa:ansible/ansible
  sudo apt-get install ansible
