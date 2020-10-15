@@ -35,8 +35,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       if machine["ansible"] != nil
         box.vm.provision "ansible" do |ansible|
             ansible.playbook = machine["ansible"] 
-            ansible.extra_vars = { ansible_python_interpreter:"/usr/bin/python3" }
-            ansible.verbose = "vv"
+            // ansible.extra_vars = { ansible_python_interpreter:"/usr/bin/python3" }
+            // ansible.verbose = "vv"
+            ansible.verbose = "False"
         end
       end
 
